@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20231218 11:38:52.627" rpa="false" schemaversion="4">
+<suite id="s1" name="Testecalculadora" source="C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Robot\Calculadora\testecalculadora.robot">
+<test id="s1-t1" name="1 - Executar Calculadora" line="5">
+<kw name="Run" library="OperatingSystem">
+<arg>C:\\Windows\\System32\\calc.exe</arg>
+<doc>Runs the given command in the system and returns the output.</doc>
+<msg timestamp="20231218 11:38:52.694" level="INFO">Running command 'C:\Windows\System32\calc.exe 2&gt;&amp;1'.</msg>
+<status status="PASS" starttime="20231218 11:38:52.678" endtime="20231218 11:38:54.268"/>
+</kw>
+<status status="PASS" starttime="20231218 11:38:52.676" endtime="20231218 11:38:54.270"/>
+</test>
+<status status="PASS" starttime="20231218 11:38:52.631" endtime="20231218 11:38:54.271"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Testecalculadora">Testecalculadora</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

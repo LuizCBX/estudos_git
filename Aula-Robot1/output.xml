@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20231218 14:43:18.226" rpa="false" schemaversion="4">
+<suite id="s1" name="Modelo" source="C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Projetos automação\Aula-Robot1\modelo.robot">
+<test id="s1-t1" name="Cenário 1: Acessando o site do Robot" line="12">
+<kw name="Abrir Site">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://robotframework.org/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231218 14:43:18.509" level="INFO">Opening browser 'chrome' to base url 'https://robotframework.org/'.</msg>
+<status status="PASS" starttime="20231218 14:43:18.508" endtime="20231218 14:43:24.984"/>
+</kw>
+<status status="PASS" starttime="20231218 14:43:18.508" endtime="20231218 14:43:24.984"/>
+</kw>
+<status status="PASS" starttime="20231218 14:43:18.507" endtime="20231218 14:43:24.986"/>
+</test>
+<status status="PASS" starttime="20231218 14:43:18.229" endtime="20231218 14:43:24.992"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Modelo">Modelo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

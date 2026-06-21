@@ -1,0 +1,414 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.1.1 (Python 3.12.1 on win32)" generated="20231220 10:41:21.972" rpa="false" schemaversion="4">
+<suite id="s1" name="Regressivo Dezembro" source="C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Projetos automação\Aula-Robot2\Testes">
+<suite id="s1-s1" name="Romaneio saida" source="C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Projetos automação\Aula-Robot2\Testes\Romaneio_saida.robot">
+<test id="s1-s1-t1" name="Cenário 1: Login UX" line="119">
+<kw name="abrir navegador">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://qa-ux.linx.com.br/3.12/Account/Login/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20231220 10:41:23.948" level="INFO">Opening browser 'chrome' to base url 'https://qa-ux.linx.com.br/3.12/Account/Login/'.</msg>
+<status status="PASS" starttime="20231220 10:41:23.947" endtime="20231220 10:41:33.969"/>
+</kw>
+<status status="PASS" starttime="20231220 10:41:23.944" endtime="20231220 10:41:33.969"/>
+</kw>
+<kw name="insira o usuario">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_name}</arg>
+<arg>desenv.franqueado</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:41:33.990" level="INFO">Typing text 'desenv.franqueado' into text field 'id:UserName'.</msg>
+<status status="PASS" starttime="20231220 10:41:33.988" endtime="20231220 10:41:34.667"/>
+</kw>
+<status status="PASS" starttime="20231220 10:41:33.988" endtime="20231220 10:41:34.667"/>
+</kw>
+<kw name="insira a senha">
+<kw name="Input Password" library="SeleniumLibrary">
+<arg>${input_password}</arg>
+<arg>@Linx456</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:41:34.691" level="INFO">Typing password into text field 'id:Password'.</msg>
+<msg timestamp="20231220 10:41:35.223" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20231220 10:41:35.590" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20231220 10:41:34.690" endtime="20231220 10:41:35.590"/>
+</kw>
+<status status="PASS" starttime="20231220 10:41:34.689" endtime="20231220 10:41:35.591"/>
+</kw>
+<kw name="clicar em entrar">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${button_login}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231220 10:41:35.599" level="INFO">Clicking button 'id:btnSubmit'.</msg>
+<status status="PASS" starttime="20231220 10:41:35.598" endtime="20231220 10:41:41.419"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:01.423" level="INFO">Slept 20 seconds</msg>
+<status status="PASS" starttime="20231220 10:41:41.420" endtime="20231220 10:42:01.423"/>
+</kw>
+<status status="PASS" starttime="20231220 10:41:35.598" endtime="20231220 10:42:01.423"/>
+</kw>
+<status status="PASS" starttime="20231220 10:41:23.942" endtime="20231220 10:42:01.423"/>
+</test>
+<test id="s1-s1-t2" name="Cenário 2: Acessar tela Romaneio" line="125">
+<kw name="pesquisar tela">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${input_pesquisar}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:01.426" level="INFO">Clicking element '//div[@id="menu-search"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:01.426" endtime="20231220 10:42:01.526"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:03.529" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:01.527" endtime="20231220 10:42:03.529"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:01.425" endtime="20231220 10:42:03.529"/>
+</kw>
+<kw name="insira o nome da tela">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${input_pesquisar_tela}</arg>
+<arg>Romaneio para Saída de Produtos</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:03.530" level="INFO">Typing text 'Romaneio para Saída de Produtos' into text field '//input[@id="menu-search-input"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:03.530" endtime="20231220 10:42:03.717"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:05.717" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:03.717" endtime="20231220 10:42:05.717"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:03.529" endtime="20231220 10:42:05.717"/>
+</kw>
+<kw name="clicar na pesquisa">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${clicar_pesquisa}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:05.720" level="INFO">Clicking element '//li[@class="list-item-dropdown list-item-result"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:05.717" endtime="20231220 10:42:05.817"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:12.817" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:05.817" endtime="20231220 10:42:12.817"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:05.717" endtime="20231220 10:42:12.817"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:01.425" endtime="20231220 10:42:12.818"/>
+</test>
+<test id="s1-s1-t3" name="Cenário 3: Criar novo registro" line="130">
+<kw name="criar novo registro">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${button_novo_registro}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:12.822" level="INFO">Clicking element '//a[@title="Novo Registro"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:12.820" endtime="20231220 10:42:14.924"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>7s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:21.925" level="INFO">Slept 7 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:14.925" endtime="20231220 10:42:21.925"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:12.820" endtime="20231220 10:42:21.925"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:12.819" endtime="20231220 10:42:21.925"/>
+</test>
+<test id="s1-s1-t4" name="Cenário 4: Pesquisar finalidade de operação" line="133">
+<kw name="inserir texto finalidade">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_finalidade}</arg>
+<arg>Venda de mercadoria</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:21.930" level="INFO">Typing text 'Venda de mercadoria' into text field '//input[@id="RomaneioNfSaida_lUpDescOperacaoFinalidade_inputLookUp"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:21.928" endtime="20231220 10:42:22.290"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_finalidade}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:22.292" level="INFO">Sending key(s) ('TAB',) to //input[@id="RomaneioNfSaida_lUpDescOperacaoFinalidade_inputLookUp"] element.</msg>
+<msg timestamp="20231220 10:42:22.620" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:22.620" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:22.291" endtime="20231220 10:42:22.640"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:27.641" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:22.640" endtime="20231220 10:42:27.641"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:21.928" endtime="20231220 10:42:27.642"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:21.927" endtime="20231220 10:42:27.643"/>
+</test>
+<test id="s1-s1-t5" name="Cenário 5: Inserir código loja e destinatario" line="137">
+<kw name="inserir texto loja">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_loja}</arg>
+<arg>FR125</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:27.648" level="INFO">Typing text 'FR125' into text field '//input[@id="RomaneioNfSaida_lUpCodLoja_inputLookUp"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:27.647" endtime="20231220 10:42:27.892"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_loja}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:27.894" level="INFO">Sending key(s) ('TAB',) to //input[@id="RomaneioNfSaida_lUpCodLoja_inputLookUp"] element.</msg>
+<msg timestamp="20231220 10:42:28.217" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:28.217" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:27.892" endtime="20231220 10:42:28.248"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:33.249" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:28.248" endtime="20231220 10:42:33.249"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:27.646" endtime="20231220 10:42:33.249"/>
+</kw>
+<kw name="inserir texto destinatario">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_destinatario}</arg>
+<arg>FR001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:33.251" level="INFO">Typing text 'FR001' into text field '//input[@id="RomaneioNfSaida_lUpCodigoPfj_inputLookUp"]'.</msg>
+<status status="PASS" starttime="20231220 10:42:33.250" endtime="20231220 10:42:33.477"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_destinatario}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:33.479" level="INFO">Sending key(s) ('TAB',) to //input[@id="RomaneioNfSaida_lUpCodigoPfj_inputLookUp"] element.</msg>
+<msg timestamp="20231220 10:42:33.797" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:33.797" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:33.477" endtime="20231220 10:42:33.820"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:38.820" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:33.820" endtime="20231220 10:42:38.820"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:33.249" endtime="20231220 10:42:38.820"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:27.645" endtime="20231220 10:42:38.821"/>
+</test>
+<test id="s1-s1-t6" name="Cenário 6: Selecionar tabela de preço, serie e condicação pagamento" line="143">
+<kw name="inserir tabela de preco">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_cod_tb_preco}</arg>
+<arg>TBB0001</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:38.825" level="INFO">Typing text 'TBB0001' into text field 'id:RomaneioNfSaida_lUpCodTabelaPreco_inputLookUp'.</msg>
+<status status="PASS" starttime="20231220 10:42:38.824" endtime="20231220 10:42:39.038"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_cod_tb_preco}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:39.039" level="INFO">Sending key(s) ('TAB',) to id:RomaneioNfSaida_lUpCodTabelaPreco_inputLookUp element.</msg>
+<msg timestamp="20231220 10:42:39.343" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:39.344" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:39.038" endtime="20231220 10:42:39.365"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:44.367" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:39.365" endtime="20231220 10:42:44.367"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:38.823" endtime="20231220 10:42:44.367"/>
+</kw>
+<kw name="inserir serie">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_serie}</arg>
+<arg>777</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:44.369" level="INFO">Typing text '777' into text field 'id:RomaneioNfSaida_lUpNfSerie_inputLookUp'.</msg>
+<status status="PASS" starttime="20231220 10:42:44.368" endtime="20231220 10:42:44.584"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_serie}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:44.586" level="INFO">Sending key(s) ('TAB',) to id:RomaneioNfSaida_lUpNfSerie_inputLookUp element.</msg>
+<msg timestamp="20231220 10:42:44.903" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:44.903" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:44.585" endtime="20231220 10:42:44.928"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:49.928" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:44.928" endtime="20231220 10:42:49.928"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:44.368" endtime="20231220 10:42:49.928"/>
+</kw>
+<kw name="inserir cod pagamento">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_cod_pgto}</arg>
+<arg>1</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:49.930" level="INFO">Typing text '1' into text field 'id:RomaneioNfSaida_lUpCodigoCondPagto_inputLookUp'.</msg>
+<status status="PASS" starttime="20231220 10:42:49.930" endtime="20231220 10:42:50.087"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_cod_pgto}</arg>
+<arg>TAB</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:50.089" level="INFO">Sending key(s) ('TAB',) to id:RomaneioNfSaida_lUpCodigoCondPagto_inputLookUp element.</msg>
+<msg timestamp="20231220 10:42:50.394" level="INFO">Pressing special key TAB to element.</msg>
+<msg timestamp="20231220 10:42:50.394" level="INFO">Releasing special key TAB.</msg>
+<status status="PASS" starttime="20231220 10:42:50.088" endtime="20231220 10:42:50.416"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:55.417" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:50.417" endtime="20231220 10:42:55.417"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:49.930" endtime="20231220 10:42:55.417"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:38.823" endtime="20231220 10:42:55.438"/>
+</test>
+<test id="s1-s1-t7" name="Cenário 7: Acessar a Aba Itens e inserir SKU" line="151">
+<kw name="acessar aba Itens">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${acessar_aba_itens}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:55.443" level="INFO">Clicking element 'id:RomaneioNfSaida_tiStkRomaneioItemTabItem'.</msg>
+<status status="PASS" starttime="20231220 10:42:55.442" endtime="20231220 10:42:55.758"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:42:59.759" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231220 10:42:55.758" endtime="20231220 10:42:59.759"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:55.441" endtime="20231220 10:42:59.759"/>
+</kw>
+<kw name="inserir SKU">
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>${inserir_SKU}</arg>
+<arg>07937</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20231220 10:42:59.761" level="INFO">Typing text '07937' into text field 'id:RomaneioNfSaida_tbCodSkuAdd'.</msg>
+<status status="PASS" starttime="20231220 10:42:59.760" endtime="20231220 10:42:59.949"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>${inserir_SKU}</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20231220 10:42:59.951" level="INFO">Sending key(s) ('ENTER',) to id:RomaneioNfSaida_tbCodSkuAdd element.</msg>
+<msg timestamp="20231220 10:43:00.465" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20231220 10:43:00.466" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20231220 10:42:59.950" endtime="20231220 10:43:00.743"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>4s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:43:04.745" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20231220 10:43:00.743" endtime="20231220 10:43:04.745"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:59.759" endtime="20231220 10:43:04.745"/>
+</kw>
+<status status="PASS" starttime="20231220 10:42:55.440" endtime="20231220 10:43:04.747"/>
+</test>
+<test id="s1-s1-t8" name="Cenário 8: Salvar e Emitir NFe" line="155">
+<kw name="salvar romaneio">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${salvar_romaneio}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:43:04.786" level="INFO">Clicking element '//a[@title="Salvar"]'.</msg>
+<status status="PASS" starttime="20231220 10:43:04.781" endtime="20231220 10:43:05.407"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>12s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:43:17.408" level="INFO">Slept 12 seconds</msg>
+<status status="PASS" starttime="20231220 10:43:05.407" endtime="20231220 10:43:17.409"/>
+</kw>
+<status status="PASS" starttime="20231220 10:43:04.778" endtime="20231220 10:43:17.409"/>
+</kw>
+<kw name="emitir nfe">
+<kw name="Execute Javascript" library="SeleniumLibrary">
+<arg>window.scrollTo(0, window.scrollY-500)</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<msg timestamp="20231220 10:43:17.419" level="INFO">Executing JavaScript:
+window.scrollTo(0, window.scrollY-500)
+Without any arguments.</msg>
+<status status="PASS" starttime="20231220 10:43:17.418" endtime="20231220 10:43:17.540"/>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${emitir_nfe}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231220 10:43:17.542" level="INFO">Clicking button 'id:RomaneioNfSaida_btnAutorizar'.</msg>
+<status status="PASS" starttime="20231220 10:43:17.540" endtime="20231220 10:43:17.878"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>8s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:43:25.879" level="INFO">Slept 8 seconds</msg>
+<status status="PASS" starttime="20231220 10:43:17.878" endtime="20231220 10:43:25.879"/>
+</kw>
+<status status="PASS" starttime="20231220 10:43:17.417" endtime="20231220 10:43:25.880"/>
+</kw>
+<kw name="nota espelho">
+<kw name="Click Button" library="SeleniumLibrary">
+<arg>${nota_espelho_nao}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20231220 10:43:25.882" level="INFO">Clicking button '//button[@class="btn btn-close"]'.</msg>
+<status status="PASS" starttime="20231220 10:43:25.881" endtime="20231220 10:43:26.037"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>30s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:43:56.037" level="INFO">Slept 30 seconds</msg>
+<status status="PASS" starttime="20231220 10:43:26.037" endtime="20231220 10:43:56.037"/>
+</kw>
+<status status="PASS" starttime="20231220 10:43:25.880" endtime="20231220 10:43:56.037"/>
+</kw>
+<kw name="retornar a aba Dados da nota fiscal">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${acessar_aba_nf}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20231220 10:43:56.043" level="INFO">Clicking element '//a[@title="Dados da Nota Fiscal"]'.</msg>
+<status status="PASS" starttime="20231220 10:43:56.042" endtime="20231220 10:43:56.403"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20231220 10:44:01.405" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20231220 10:43:56.403" endtime="20231220 10:44:01.405"/>
+</kw>
+<status status="PASS" starttime="20231220 10:43:56.039" endtime="20231220 10:44:01.405"/>
+</kw>
+<status status="PASS" starttime="20231220 10:43:04.777" endtime="20231220 10:44:01.443"/>
+</test>
+<status status="PASS" starttime="20231220 10:41:22.054" endtime="20231220 10:44:01.501"/>
+</suite>
+<status status="PASS" starttime="20231220 10:41:21.979" endtime="20231220 10:44:01.577"/>
+</suite>
+<statistics>
+<total>
+<stat pass="8" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="8" fail="0" skip="0" id="s1" name="Regressivo Dezembro">Regressivo Dezembro</stat>
+<stat pass="8" fail="0" skip="0" id="s1-s1" name="Romaneio saida">Regressivo Dezembro.Romaneio saida</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20231220 10:41:23.925" level="WARN">Imported resource file 'C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Projetos automação\Aula-Robot2\Resources\ResourceBDD.robot' is empty.</msg>
+<msg timestamp="20231220 10:41:23.935" level="WARN">Imported resource file 'C:\Users\luiz.hsantos\OneDrive - Linx SA\QA_INOVACAO\Estudos\Projetos automação\Aula-Robot2\Resources\BDDpt-br.robot' is empty.</msg>
+</errors>
+</robot>
