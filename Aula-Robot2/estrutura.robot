@@ -25,3 +25,4 @@ Cenário 1: Teste abrir navegador
     Execute Javascript    window.scrollTo(0, window.scrollY-200)
     Sleep   10s
 
+Novo
